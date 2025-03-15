@@ -34,7 +34,7 @@ This project is a Dockerized web application that automates the extraction and a
 ## Build and Run
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/nicolouzg/aliexpress_downloader.git
+cd aliexpress_downloader
 docker compose up --build
 ```

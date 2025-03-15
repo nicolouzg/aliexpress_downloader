@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - /app/venv  # Prevent overwriting installed packages
+    environment:
+      - FLASK_ENV=production
+
+  frontend:
+    build: ./ecomtools
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
